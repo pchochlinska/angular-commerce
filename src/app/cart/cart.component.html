@@ -1,0 +1,23 @@
+<div class="inline-heading">
+  <h2> Cart </h2>
+   <button 
+        [routerLink]="['/']"
+      >
+     Continue shopping
+      </button>
+</div>
+
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>
+
+<a *ngIf="!checked" (click)="checked=true">Show shipping prices</a>
+<a *ngIf="checked" (click)="checked=false">Hide shipping prices</a>
+
+<div *ngIf="checked" class="shipping-items--box">
+  <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+    <span>{{ shipping.type }}</span>
+    <span>{{ shipping.price | currency }}</span>
+  </div>
+</div>

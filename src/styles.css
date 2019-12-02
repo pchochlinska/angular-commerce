@@ -15,6 +15,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+
 }
 
 .container-block{
@@ -131,20 +132,23 @@ app-top-bar h1 {
 .cart-item, .shipping-item {
   width: 100%;
   min-width: 400px;
-  max-width: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: rgb(245, 245, 245);
 }
 
 .inline-heading{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.shipping-items--box{
+  margin-top: 1rem;
 }
 
 /*
