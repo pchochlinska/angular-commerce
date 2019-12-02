@@ -21,3 +21,18 @@
     <span>{{ shipping.price | currency }}</span>
   </div>
 </div>
+
+<form class="mt-1" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div class="form-group mr-1">
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+
+  <div class="form-group mr-1">
+    <label for="address">Address</label>
+    <input type="text" id="address" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+</form>
+

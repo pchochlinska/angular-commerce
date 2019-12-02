@@ -64,6 +64,8 @@ input {
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #BDBDBD;
+  display: block;
+  width: 100%;
 }
 
 label {
@@ -148,9 +150,25 @@ app-top-bar h1 {
 }
 
 .shipping-items--box{
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
+.mt-1{
+  margin-top: 1rem;
+}
+.mr-1{
+  margin-right: 1rem;
+}
+.form-group{
+  display: block;
+  width: 100%;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
