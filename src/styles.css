@@ -17,6 +17,10 @@ body {
   flex-direction: row;
 }
 
+.container-block{
+  display: block;
+  padding: 0 1rem;
+}
 router-outlet + *  {
   padding: 0 16px;
 }
@@ -137,6 +141,11 @@ app-top-bar h1 {
   background-color: #EEEEEE;
 }
 
+.inline-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
