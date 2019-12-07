@@ -28,10 +28,14 @@ export class CartComponent implements OnInit{
    }
 
   onSubmit(customerData){
-    window.alert('Your order has been submitted. Name: ' + customerData.name + ' Address: ' + customerData.address);
+    if(this.items.length > 0){
+      window.alert('Your order has been submitted. Name: ' + customerData.name + ' Address: ' + customerData.address);
 
-    this.items = this.cartService.clearCart();
-    this.checkoutForm.reset();
+      this.items = this.cartService.clearCart();
+      this.checkoutForm.reset();
+    } else {
+       window.alert('Go to product page and choose what you want to buy.')
+    }
   }
 
   ngOnInit() {
